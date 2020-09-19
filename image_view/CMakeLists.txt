@@ -39,10 +39,10 @@ if(ANDROID)
 endif()
 
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(GTK3 REQUIRED gtk+-3.0)
+pkg_check_modules(GTK3 gtk+-3.0)
 include_directories(${GTK3_INCLUDE_DIRS})
 
-pkg_check_modules(PC_HB REQUIRED harfbuzz)
+pkg_check_modules(PC_HB harfbuzz)
 include_directories(${PC_HB_INCLUDE_DIRS})
 
 # Nodelet library
